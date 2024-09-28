@@ -39,8 +39,10 @@ We'll be working in `level-one.html` and `level-one.js` to accomplish these goal
 - We also have a section with the class of `level-winner`, which is not currently appearing because it has an opacity of 0 in its CSS rules
 - We'll need to use these elements to create the game functionality for Level 1
 
+
 Now, in `level-one.js` we'll need to create a few necessary variables to start.
 - At the top of `level-one.js` create a `score` variable with an initial value of `0`
+- Create a variable `ball` and assign its value by grabbing the `.js-ball` class with a `querySelector()`
 - We'll also need to create variables to allow access to our HTML elements and control their behavior
   - Create a variable `ball` and assign its value by grabbing the `.js-ball` class with a `querySelector()`
   - Create a variable `scoreDisplay` and assign its value to the `js-score` class
