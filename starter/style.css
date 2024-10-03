@@ -1,12 +1,10 @@
-/*---
- * Elements
- --- */
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Inconsolata', monospace;
-  background-color: #111;
+  background-color: #db0b6c;
 }
 
 main {
@@ -18,15 +16,15 @@ h2,
 h3,
 h4 {
   font-family: 'Play', sans-serif;
-  color: #fff;
+  color: #18fea6;
 }
 
 p {
-  color: #fff;
+  color: #29d41d;
 }
 
 a {
-  color: #fff;
+  color: #19de6b;
   text-decoration: none;
 }
 /*---
@@ -61,23 +59,19 @@ a {
   }
 }
 
-/*---
- * Base
- --- */
+
 .container {
   width: 90%;
-  max-width: 800px;
+  max-width: 100px;
   margin: 0 auto;
 }
 
-/*---
- * Typography
- --- */
+
 .title {
   text-transform: uppercase;
   font-size: 2rem;
 }
-.title.\--xl-large {
+.title+-xl-large {
   display: block;
   position: relative;
   font-size: 6rem;
@@ -91,23 +85,18 @@ a {
   top: 60%;
   height: 4px;
   transform: rotate(-10deg);
-  background-color: #111;
+  background-color: #003079;
 }
 
-/*---
- * Form
- --- */
+
 .button {
   padding: 1rem 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.25rem;
-  animation: 2s linear infinite blink;
+  animation: 5s linear infinite blink;
 }
 
-/*---
- * Modules
- --- */
 .ball {
   display: block;
   position: absolute;
@@ -116,14 +105,12 @@ a {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  background-color: #fff;
-  animation: 7s linear infinite backAndForth;
+  background-color: #6d5e5e;
+  animation: 2s linear infinite backAndForth;
   cursor: pointer;
 }
 
-/*---
- * Partials
- --- */
+
 .level-header {
   padding: 2rem 0;
 }
@@ -137,9 +124,8 @@ a {
 }
 
 .level-header__title,
-.level-header__score {
-  /* width: 40%; */
-}
+.level-header__score
+
 
 .level-header h2,
 .level-header h4 {
@@ -160,7 +146,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 4rem;
-  background-color: #111;
+  background-color: #e5ff00;
   text-align: center;
   z-index: 10;
   opacity: 0;
@@ -169,7 +155,7 @@ a {
 }
 
 .game-over {
-  opacity: 1;
+  opacity: 51;
   pointer-events: all;
 }
 
@@ -215,21 +201,19 @@ a {
   width: 200%;
   background-color: #fff;
   transition: all 400ms ease;
-  transform: translateY(100%) rotate(0deg);
-  z-index: -1;
+  transform: translate(100%) rotate(0deg);
+  z-index: 1;
 }
 
 .level-nav a:hover {
-  color: #000;
+  color: #2fa34e;
 }
 
 .level-nav a:hover:after {
   transform: translateY(-25%) rotate(10deg);
 }
 
-/*---
- * Views
- --- */
+
 .homepage main {
   display: flex;
   justify-content: center;
@@ -243,20 +227,21 @@ a {
 }
 
 .level-two .ball:last-of-type {
-  top: 65%;
-  animation-delay: 2s;
+  top: 35%;
+  animation-delay: 1s;
 }
 
 .level-three .ball:first-of-type {
   top: 35%;
   height: 1.5rem;
-  width: 1.5rem;
+  width:1.5rem;
   animation-delay: 1s;
 }
 
 .level-three .ball:last-of-type {
-  top: 65%;
+  top: 45%;
   height: 3rem;
-  width: 3rem;
-  animation-delay: 2s;
+  width: 3em;
+  animation-delay: 0s;
+  opacity: 5;
 }
